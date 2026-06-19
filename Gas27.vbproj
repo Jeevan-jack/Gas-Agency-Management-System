@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5F1D3397-542B-4004-BAFC-2D397CFC30EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Gas27.My.MyApplication</StartupObject>
+    <RootNamespace>Gas27</RootNamespace>
+    <AssemblyName>Gas27</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Gas27.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Gas27.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AnalysisServices.AppLocal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.AnalysisServices.AppLocal.Tabular, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminDashboard.Designer.vb">
+      <DependentUpon>AdminDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminProfile.Designer.vb">
+      <DependentUpon>AdminProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRegister.Designer.vb">
+      <DependentUpon>AdminRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignDeliveries.Designer.vb">
+      <DependentUpon>AssignDeliveries.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AssignDeliveries.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookGas.Designer.vb">
+      <DependentUpon>BookGas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookGas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerDashboard.Designer.vb">
+      <DependentUpon>CustomerDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerFeedback.Designer.vb">
+      <DependentUpon>CustomerFeedback.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerFeedback.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerNotification.Designer.vb">
+      <DependentUpon>CustomerNotification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerNotification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerProfile.Designer.vb">
+      <DependentUpon>CustomerProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerRegister.Designer.vb">
+      <DependentUpon>CustomerRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeliveryagentDashboard.Designer.vb">
+      <DependentUpon>DeliveryagentDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryagentDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeliveryAgentNotifications.Designer.vb">
+      <DependentUpon>DeliveryAgentNotifications.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryAgentNotifications.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeliveryAgentProfile.Designer.vb">
+      <DependentUpon>DeliveryAgentProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryAgentProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeliveryAgentRegister.Designer.vb">
+      <DependentUpon>DeliveryAgentRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryAgentRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gas27DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gas27DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Gas27DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gas27DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Gas27DataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gas27DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Gas27DataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gas27DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Gas27DataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gas27DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GasB27DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GasB27DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GasB27DataSet11.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GasB27DataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVariables.vb" />
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.vb">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageFeedback.Designer.vb">
+      <DependentUpon>ManageFeedback.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManageFeedback.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageInventory.Designer.vb">
+      <DependentUpon>ManageInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManageInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageUsers.Designer.vb">
+      <DependentUpon>ManageUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManageUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Payments.Designer.vb">
+      <DependentUpon>Payments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Payments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.vb">
+      <DependentUpon>RegisterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendNotification.Designer.vb">
+      <DependentUpon>SendNotification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SendNotification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Session.vb" />
+    <Compile Include="ViewAssignDeliveries.Designer.vb">
+      <DependentUpon>ViewAssignDeliveries.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAssignDeliveries.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewBookings.Designer.vb">
+      <DependentUpon>ViewBookings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBookings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewBookingStatus.Designer.vb">
+      <DependentUpon>ViewBookingStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBookingStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPayments.Designer.vb">
+      <DependentUpon>ViewPayments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPayments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yourorders.Designer.vb">
+      <DependentUpon>Yourorders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yourorders.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminProfile.resx">
+      <DependentUpon>AdminProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRegister.resx">
+      <DependentUpon>AdminRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignDeliveries.resx">
+      <DependentUpon>AssignDeliveries.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookGas.resx">
+      <DependentUpon>BookGas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerDashboard.resx">
+      <DependentUpon>CustomerDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerFeedback.resx">
+      <DependentUpon>CustomerFeedback.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerNotification.resx">
+      <DependentUpon>CustomerNotification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerProfile.resx">
+      <DependentUpon>CustomerProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerRegister.resx">
+      <DependentUpon>CustomerRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliveryagentDashboard.resx">
+      <DependentUpon>DeliveryagentDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliveryAgentNotifications.resx">
+      <DependentUpon>DeliveryAgentNotifications.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliveryAgentProfile.resx">
+      <DependentUpon>DeliveryAgentProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliveryAgentRegister.resx">
+      <DependentUpon>DeliveryAgentRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageFeedback.resx">
+      <DependentUpon>ManageFeedback.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageInventory.resx">
+      <DependentUpon>ManageInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageUsers.resx">
+      <DependentUpon>ManageUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payments.resx">
+      <DependentUpon>Payments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendNotification.resx">
+      <DependentUpon>SendNotification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAssignDeliveries.resx">
+      <DependentUpon>ViewAssignDeliveries.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewBookings.resx">
+      <DependentUpon>ViewBookings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewBookingStatus.resx">
+      <DependentUpon>ViewBookingStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPayments.resx">
+      <DependentUpon>ViewPayments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yourorders.resx">
+      <DependentUpon>Yourorders.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gas27DataSet.xsc">
+      <DependentUpon>Gas27DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Gas27DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Gas27DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Gas27DataSet.xss">
+      <DependentUpon>Gas27DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Gas27DataSet1.xsc">
+      <DependentUpon>Gas27DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Gas27DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Gas27DataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Gas27DataSet1.xss">
+      <DependentUpon>Gas27DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Gas27DataSet2.xsc">
+      <DependentUpon>Gas27DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Gas27DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Gas27DataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Gas27DataSet2.xss">
+      <DependentUpon>Gas27DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Gas27DataSet3.xsc">
+      <DependentUpon>Gas27DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Gas27DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Gas27DataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Gas27DataSet3.xss">
+      <DependentUpon>Gas27DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Gas27DataSet4.xsc">
+      <DependentUpon>Gas27DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Gas27DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Gas27DataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Gas27DataSet4.xss">
+      <DependentUpon>Gas27DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="GasB27DataSet1.xsc">
+      <DependentUpon>GasB27DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GasB27DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GasB27DataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GasB27DataSet1.xss">
+      <DependentUpon>GasB27DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GasB27DataSet11.xsc">
+      <DependentUpon>GasB27DataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="GasB27DataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GasB27DataSet11.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GasB27DataSet11.xss">
+      <DependentUpon>GasB27DataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
